@@ -5,6 +5,79 @@
 }
 
 
+:root {
+    --main-color: #F9C06A;
+    --secondary-color: #603809;
+    --main-font: "Clicker Script", sans-serif;
+}
+
 body {
     font-family: "Clicker Script", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-btn {
+    width: fit-content;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+
+nav {
+    width: 100%;
+    max-width: 1500px;
+    height: 5rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo span {
+    font-size: 55px;
+}
+
+nav ul {
+    padding: 0px 10px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+nav .btns {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        font-size: 20px;
+        color: black;
+    }
 }
